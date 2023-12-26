@@ -1,0 +1,11 @@
+.Home{
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    color: white;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+

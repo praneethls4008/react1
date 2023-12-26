@@ -1,0 +1,29 @@
+.detailTable{
+    padding-top: 20px;
+    width: 100%;
+    color: white;
+}
+
+.detailTable tbody{
+    width: 100%;
+    text-align:center ;
+    background-color: rgba(49, 53, 52, 0.526);
+}
+
+.detailRow{
+    display: grid;
+    grid-template-columns: minmax(39vw,39vw) minmax(29vw,29vw) minmax(29vw,29vw);
+    word-wrap: break-word;
+    border-bottom-style : dotted;
+    border-right-style : dotted;
+    row-gap: 12px;
+    column-gap: 1vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.detailColumnDeleteButton span:hover{
+    color: rgba(49, 53, 52, 0.526);
+    cursor: pointer;
+}
+

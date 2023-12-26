@@ -1,0 +1,51 @@
+.Nav{
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%, 0.45);
+    width: 100%;
+    padding-bottom: 30px;
+    position: sticky;
+    top: 0px;
+}
+
+
+.Nav h1{
+   text-align: center;
+   text-decoration: underline;
+   color: white;
+}
+
+.Nav h1:hover{
+    color: white;
+    opacity: 0.7;
+ }
+
+.NavLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 20px 0px 20px;
+    border-style: outset;
+    
+}
+
+.NavLinks a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: larger;
+}
+.NavLinks a:hover{
+    color: white;
+    opacity: 1;
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+    transition: ease-in;
+}
+
+.NavLinks input{
+    text-align: center;
+    opacity: 0.6;
+    background-color: transparent;
+    border: rgb(236, 227, 227);
+    border-style: dotted;
+}
+

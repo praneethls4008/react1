@@ -1,0 +1,27 @@
+.detailsForm{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: minmax(35vw,35vw) minmax(50vw,50vw);
+    column-gap: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.detailsForm label{
+    text-align: center;
+}
+
+.detailsFormSubmit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.detailsFormSubmit button{
+    color: whitesmoke;
+    background-color: rgb(140, 126, 126);
+    &:hover{
+        opacity: 0.5;
+    }
+}
