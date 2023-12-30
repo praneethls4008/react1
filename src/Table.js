@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Table.css'
 import { motion } from 'framer-motion';
+import { contextProvider } from './App';
+import { useContext } from 'react';
 export const Table = ({details})=>{
+   const value = useContext(contextProvider);
    return(
+        <>
+        <h1>{`value: ${value}`}</h1>
         <motion.table className='detailTable'
         transition={{
             ease: "linear",
@@ -41,5 +46,6 @@ export const Table = ({details})=>{
                 }
                 </tbody>
             </motion.table>
+            </>
     )
 }

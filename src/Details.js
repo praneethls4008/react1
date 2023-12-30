@@ -6,8 +6,7 @@ import { NotFound } from "./NotFound";
 export const Details=()=>{
     const [searchParam,setSearchParam] = useSearchParams();
     const {data:details, isError, isLoading} = useFetch('http://localhost:8000/details', searchParam);
-    console.log(`${isError.error} ${isLoading} ${details}`);
-    return (
+     return (
         <div className="Details">
             {isError.error && <div>{isError.msg}</div>}
             {isLoading && <div>Loading....</div>}
