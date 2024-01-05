@@ -1,6 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { Nav } from "./Nav";
-import { Footer } from "./Footer";
+
 import './index.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { AnimatePresence } from 'framer-motion';
@@ -14,13 +13,7 @@ root.render(
     
     <BrowserRouter>
     <Routes>
-      <Route path='*' element={
-        <>
-          <Nav/>
-          <App />
-          <Footer/>
-        </>
-      }/>
+      <Route path='*' element={<App />}/>
     </Routes>
     </BrowserRouter>
   </AnimatePresence>

@@ -3,12 +3,11 @@ import './Table.css'
 import { motion } from 'framer-motion';
 import { contextProvider } from './App';
 import { useContext } from 'react';
-export const Table = ({details})=>{
-   const value = useContext(contextProvider);
+export const Table = ()=>{
+   const {tableState, dispatcher} = useContext(contextProvider);
+   const {data:details, isLoading:isDetailsLoading, isError:isDetailsFetchError} = tableState; 
    return(
-        <>
-        <h1>{`value: ${value}`}</h1>
-        <motion.table className='detailTable'
+       <motion.table className='detailTable'
         transition={{
             ease: "linear",
             duration: 2,
@@ -37,15 +36,11 @@ export const Table = ({details})=>{
                                         <span>{detail.office}</span>
                                     </Link>
                                 </td>
-                                {/* <td className='detailColumnDeleteButton' > 
-                                    <span className="material-symbols-outlined" onClick={()=>deleteDetails(detail.id)}>delete</span>
-                                </td> */}
                             </tr>
                         );
                     })
                 }
                 </tbody>
             </motion.table>
-            </>
     )
 }
