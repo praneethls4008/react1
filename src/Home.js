@@ -14,7 +14,7 @@ export const Home = () => {
         <div className="Home">
             {isDetailsLoading && <div>Loading...</div>}
             {isDetailsFetchError.error && <div>{isDetailsFetchError.msg}</div>}
-            {details && <Table></Table>}
+            {details && <Table searchParam={searchParam}/>}
         </div>
     );
 }

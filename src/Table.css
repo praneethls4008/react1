@@ -1,5 +1,4 @@
 .detailTable{
-    padding-top: 20px;
     width: 100%;
     color: white;
 }
@@ -7,23 +6,29 @@
 .detailTable tbody{
     width: 100%;
     text-align:center ;
-    background-color: rgba(49, 53, 52, 0.526);
 }
 
 .detailRow{
     display: grid;
-    grid-template-columns: minmax(39vw,39vw) minmax(29vw,29vw) minmax(29vw,29vw);
+    grid-template-columns: minmax(76vw,76vw) minmax(10vw,10vw) minmax(10vw,10vw);
     word-wrap: break-word;
-    border-bottom-style : dotted;
-    border-right-style : dotted;
-    row-gap: 12px;
+    row-gap: 10px;
     column-gap: 1vw;
     margin: 0px;
     padding: 0px;
+    .detailRowHead{
+        border-style: double;
+    }
 }
 
-.detailColumnDeleteButton span:hover{
-    color: rgba(49, 53, 52, 0.526);
-    cursor: pointer;
+
+.detailColumnDeleteButton a{
+    color:white;
+    :hover{
+        color: rgba(49, 53, 52, 0.526);
+        cursor: pointer; 
+    }
+    text-decoration: none;
+    
 }
 
