@@ -28,8 +28,8 @@
     justify-items: center;
     padding: 10px 20px 10px 20px;
     /* margin: 0px 20px 0px 20px; */
-    border-style: outset;
-    border-left: 0px;
+    border-style: double;
+    border-radius: 10px;
     width: 100%;
     
     
@@ -63,16 +63,13 @@
     border: rgb(249, 248, 248);
     border-style: double;
     border-width: 3%;
-    width: 100%;
-    :focus :active{
-        box-shadow: none;
-        border-color: inherit;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border: none;
-    }
-    
-    
+    border-radius: 59px;
+    width: 100%; 
+    color: smoke whitesmoke;
+}
+
+.searchInput:active{
+    outline-width: 0px;
 }
 
 .searchDropDown{
@@ -85,16 +82,20 @@
     margin: 0%;
     padding: 3% 2% 1% 2%;
     width: 100%;
-    background-color: #c7c4c5;
+    background: linear-gradient(0deg, #baa7b7, #83859d);
     text-decoration: none;
     color: gray;
+    overflow: hidden;
 }
 
 .searchDropDownLink{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    word-break: break-all;
+
 }
 .searchDropDownLink:hover{
     border-color: rgb(233, 229, 229);
     border-style: dotted;
+    border-radius: 10px;
 }

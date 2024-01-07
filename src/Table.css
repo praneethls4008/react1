@@ -22,13 +22,15 @@
 }
 
 
-.detailColumnDeleteButton a{
+.detailColumnLink{
     color:white;
-    :hover{
-        color: rgba(49, 53, 52, 0.526);
-        cursor: pointer; 
-    }
-    text-decoration: none;
-    
+    text-decoration: underline;
+}
+
+
+
+.detailColumnLink:hover{
+    color: rgb(241, 232, 232);
+    cursor: pointer; 
 }
 

@@ -4,8 +4,7 @@ import './Footer.css'
 export const Footer = () =>{
     return(
         <div className="Footer">
-            <h4>Footers</h4>
-            <br/>
+            <h4>Check these Companies...</h4>
             <div className="FooterLinks">
                 <Link to="/details?office=tcs">TCS</Link>
                 <Link to="/details?office=amazon">Amazon</Link>

@@ -7,8 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: whitesmoke;
-  background-image: linear-gradient(rgba(190, 185, 185, 0.5), rgba(183, 177, 177, 0.5)),url('/public/premium_photo-1673240367277-e1d394465b56.avif');
+  background-image: url('/public/backgroundimage2.png');
   background-attachment: fixed;
   color: white;
   opacity: 0.95;

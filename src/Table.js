@@ -45,7 +45,7 @@ export const Table = ({searchParam})=>{
                                     <span>{detail.age}</span> 
                                 </td>
                                 <td className='detailColumn detailColumn3'> 
-                                    <Link to={{
+                                    <Link className='detailColumnLink' to={{
                                         pathname:'/details',
                                         search: `?office=${detail.office}`
                                     }}>
